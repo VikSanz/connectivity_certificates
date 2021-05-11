@@ -1,1 +1,1 @@
-# Animaciones de algoritmos que generan certificados de k-conexidad
+# Algoritmos que generan certificados de k-conexidad
