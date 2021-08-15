@@ -1,3 +1,5 @@
+import networkx
+
 class Vertice:
      ### Constructor
     def __init__(self,i):
@@ -190,4 +192,24 @@ def nueva_grafica(G):
     for u in G.vertices:
         for v in G.vertices[u].vecinos:
             H.agregar_arista(u,v[0],v[1])
+    return H
+
+### Esta función permite convertir una gráfica de Networkx a una Grafica() para correr ni_search
+### en el vértice v_0 y nos regresa una gráfica de Networkx H cuyos pesos representan las etiquetas
+def nx_ni_search(Gnx, v_0):
+    G_1 = Grafica()
+    
+    for i,j in Gnx.edges:
+        G_1.agregar_vertice(i)
+        G_1.agregar_vertice(j)
+        G_1.agregar_arista(i,j, 0)
+    
+    G_1.ni_search(v_0)
+    busqueda_ni = G_1.ni_edges()
+    
+    H = nx.Graph()
+    
+    for i in range(0, len(busqueda_ni), 2):
+        H.add_edge(busqueda_ni[i][0], busqueda_ni[i][1], weight=busqueda_ni[i+1])
+    
     return H
