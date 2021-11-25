@@ -22,16 +22,6 @@ Graph.py can be imported as a module to be used with Networkx library [https://n
 
 This project is part of my master's thesis, once I present my exam, I will upload the fully commented code.
 
----
-Dies ist eine Implementierung von Grund auf der Algorithmen:
-1) NI-Search von Nagamochi und Ibaraki in [2]
-2) Scan-first Search von Cheriyan, Kao und Thurimella in [1]
-
-Diese Algorithmen erzeugen k-konnektivitäts Zertifikate auf dem Eingabegraphen. Durch die Generierung von k-konnektivitäts Zertifikaten kann die Zeitkomplexität anderer Algorithmen in Graphen / Netzwerken reduziert werden, da diese Graphen dadurch gekennzeichnet sind, dass sie dünn besetzt sind, d.h. weniger Kanten haben als der Originalgraph, aber ihre k-Konnektivität beibehalten.
-
-Graph.py kann als Modul zur Verwendung mit der Networkx-Bibliothek [https://networkx.org] importiert werden. Darüber hinaus ist ein Skript enthalten, das die schrittweise Visualisierung jedes dieser Algorithmen in einem Diagramm zeigt, das der Benutzer eingibt.
-  
-Dieses Projekt ist Teil meiner Masterarbeit, sobald ich meine Prüfung vorlege, werde ich den vollständig kommentierten Code hochladen.
 
 
 [1] Cheriyan, J., Kao, M. Y., & Thurimella, R. (1993). Scan-first search and sparse certificates: an improved parallel algorithm for k-vertex connectivity. SIAM Journal on Computing, 22(1), 157-174.
